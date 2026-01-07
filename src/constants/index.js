@@ -3,65 +3,69 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `With a solid foundation in Computer Science and Engineering, I am a passionate developer skilled in Python, C++, JavaScript, and modern web technologies like React . I have practical experience in developing innovative projects, including an AI-powered security system and a sophisticated mail spam detection model. I am driven by a commitment to solving real-world challenges and eager to contribute to a dynamic tech team. Let us connect and explore how my skills can add value to your projects!`;
+export const HERO_CONTENT = `With a strong foundation in Computer Science and Engineering, I am a frontend-focused developer skilled in JavaScript, React, and modern web technologies. I have hands-on experience building production-grade web applications, dashboards, and scalable UI components through my work at Physics Wallah. I enjoy creating clean, responsive interfaces, solving real-world problems through code, and continuously improving user experience. I am eager to contribute to impactful products in a collaborative tech environment.`;
 
-export const ABOUT_TEXT = `I am a passionate problem-solver with a strong foundation in Computer Science and Engineering. My expertise spans across a range of technologies including Python, C++, JavaScript, React. With hands-on experience in developing innovative projects such as VIGILANCE-NET, an AI-powered security surveillance system, and a robust mail spam detection system, I am adept at solving complex technical challenges. I am committed to continuous learning and thrive in collaborative environments where I can leverage my skills to drive impactful solutions. Outside of development, I am enthusiastic about exploring new technologies and contributing to meaningful projects. `;
+export const ABOUT_TEXT = `I am a problem-solver with a strong foundation in Computer Science and Engineering, focused on building scalable and user-centric web applications. My expertise lies in JavaScript, React, and modern frontend technologies, with hands-on experience developing production-ready interfaces, dashboards, and reusable component systems during my work at Physics Wallah. I enjoy solving real-world problems through clean UI design, efficient code, and thoughtful user experiences. I am committed to continuous learning and thrive in collaborative environments where I can contribute to impactful and reliable digital products. `;
 
 export const PROJECTS = [
-  // {
-  //   title: "VIGILANCE-NET: AI-Powered Security Surveillance System",
-  //   timeSpan: "June 2024 - Present",
-  //   description: `
-  //     • Engineered a YOLO-based system for real-time threat detection via laptop cameras, reducing false positives by 40% and enhancing security monitoring efficiency by 55%.
-  //     • Utilized Python and OpenCV for image processing, achieving a 30% faster processing rate.
-  //     • Conducted technical and operational feasibility studies, ensuring 100% project viability.
-  //     • Implemented Agile methodologies, resulting in a 25% increase in development speed.
-  //     • Planning IoT integration for enhanced surveillance capabilities, aiming for a 20% boost in detection accuracy.
-  //   `,
-  // },
   {
-    title: " AetherCare-AI-Powered-Wellness-Consultant",
-    timeSpan: "April 2024 - May 2024",
+    title: "TalentLoop — Job Portal",
+    timeSpan: "September 2025 to December 2025",
+    liveLink: "https://talent-loop-vert.vercel.app/",
+    githubLink: "https://github.com/ISHIKASINGH0612/TalentLoop",
     description: `
-      •  Pioneered an AI-driven chatbot that assists 100+ users in disease diagnosis with an 85% accuracy rate,
-      employing a Decision Tree Classifier and real-time feedback to analyze symptoms.
-      • Spearheaded recommendations for 40+ medical professionals based on user inputs.
-      • Orchestrated data management and analysis with Pandas, NumPy, and Scikit-learn in a Tkinter GUI, enhancing
-      machine learning algorithms to achieve 85% diagnosis accuracy while iterating on the model based on feedback
-      from 100+ users to improve symptom recognition and engagement
+      • Built a role-based job portal using React, Clerk authentication, and Supabase.
+      • Implemented secure authentication, role-based authorization, and personalized dashboards.
+      • Enabled end-to-end workflows including job posting, applications, saved jobs, and tracking.
+      • Deployed a production-ready frontend using shadcn/ui and React Router.
     `,
   },
   {
-    title: "Mail Spam Detection Using Machine Learning",
-    timeSpan: "December 2023 - January 2024",
+    title: "FactVoyage — Country Exploration App",
+    timeSpan: "July 2025 to September 2025",
+    liveLink: "https://fact-voyage.vercel.app/",
+    githubLink: "https://github.com/ISHIKASINGH0612/FactVoyage",
     description: `
-      • Developed a spam classifier using Naive Bayes, SVM, Decision Trees, and Boosting techniques.
-      • Utilized Python libraries including Pandas, NumPy, Matplotlib, Seaborn, NLTK, Scikit-learn, XGBoost, StackingClassifier, VotingClassifier, and Pickle for efficient development.
-      • Implemented TF-IDF for text vectorization, achieving 95% accuracy in classification.
-      • Conducted rigorous data cleaning, EDA, and text preprocessing, improving model efficiency by 20%.
-      • Applied Voting and Stacking techniques using SVM, Naive Bayes, and Extra Trees, enhancing spam detection accuracy by 25%.
+      • Developed a country exploration application using React and React Router.
+      • Integrated APIs to fetch and render real-time country data using reusable components.
+      • Designed a responsive, light-themed UI with optimized Vite build.
+      • Focused on modular architecture and performance-oriented frontend practices.
     `,
   },
   {
-    title: "Portfolio Website using React",
+    title: "Portfolio Website",
     timeSpan: "July 2024",
+    liveLink: "https://portfolio-using-react-bay-alpha.vercel.app/",
+    githubLink: "https://github.com/ISHIKASINGH0612/Portfolio-Using-React",
     description: `
-      • Created a personal portfolio website using React to showcase projects, skills, and contact information.
-      • Implemented modern web design practices and responsive layout to ensure accessibility on various devices.
-      • Enhanced the user experience with interactive elements and optimized performance for fast loading times.
+      • Built a personal portfolio using React, Tailwind CSS, and Framer Motion.
+      • Structured reusable sections including About, Projects, Experience, and Contact.
+      • Implemented smooth animations and responsive layouts for enhanced UX.
+      • Managed deployment and version control using GitHub and Vercel.
+    `,
+  },
+  {
+    title: "Mail Spam Detection System",
+    timeSpan: "Dec 2023 to Jan 2024",
+    githubLink: "https://github.com/your-username/mail-spam-detector",
+    description: `
+      • Developed a machine learning based spam classification system using Python.
+      • Applied text preprocessing and TF-IDF vectorization for effective feature extraction.
+      • Trained and evaluated multiple classifiers including Naive Bayes and SVM.
+      • Focused on model evaluation, data preprocessing, and end-to-end ML workflow understanding.
     `,
   },
 ];
 
+
 export const CORE_SUBJECTS = [
-  "Database Management System",
-  "Computer Networks",
-  "Data Structure & Algorithm",
-  "Operating System",
+  "Data Structures and Algorithms",
   "Object-Oriented Programming",
- 
-  
+  "Database Management Systems",
+  "Software Engineering",
+  // "Computer Networks",
 ];
+
 
 export const ACHEVIEMENTS = [
   " Leetcode:Current rating 1438.",
@@ -71,7 +75,7 @@ export const ACHEVIEMENTS = [
 ];
 
 export const CONTACT = {
-  address: "PSIT Girls Hostel , Kanpur , Uttar Pradesh-209305 ",
+  address: "Pune, Maharashtra, India 411028",
   phoneNo: "+91 9569725984 ",
   email: "ISHIKASINGH0612@GMAIL.COM",
 

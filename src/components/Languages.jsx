@@ -32,12 +32,7 @@ const Languages = () => {
        className='rounded-2xl border-4 border-neutral-800 p-4'>
           <DiJavascript className='text-7xl' style={{ color: '#F7DF1E' }} /> {/* JavaScript yellow color */}
         </motion.div>
-        <motion.div   variants={iconVariant(2.5)}
-          initial="initial"
-          animate="animate"
-className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <FaPython className='text-7xl' style={{ color: '#3776AB' }} /> {/* Python blue color */}
-        </motion.div>
+        
           <motion.div  variants={iconVariant(2.5)}
           initial="initial"
           animate="animate"

@@ -1,56 +1,130 @@
-import React from 'react'
+// import React from 'react'
 
-import { RiReactjsLine } from 'react-icons/ri';
-
-
-import { TbSql } from 'react-icons/tb';
-import { motion } from 'framer-motion';
+// import { RiReactjsLine } from 'react-icons/ri';
 
 
+// import { TbSql } from 'react-icons/tb';
+// import { motion } from 'framer-motion';
 
-const iconVariant=(duration)=>(
-  {
-    initial:{y:-10},
-    animate:{
-      y:[10 ,-10],
-      transition:{
-        duration:duration,
-        ease:"linear",
-        repeat:Infinity,
+
+
+// const iconVariant=(duration)=>(
+//   {
+//     initial:{y:-10},
+//     animate:{
+//       y:[10 ,-10],
+//       transition:{
+//         duration:duration,
+//         ease:"linear",
+//         repeat:Infinity,
 
         
-        repeatType:"reverse"
-      }
+//         repeatType:"reverse"
+//       }
+//     },
+//   }
+// )
+
+// const Technologies = () => {
+//   return (
+//     <div className='border-b border-neutral-800 pb-24'>
+//         <h1 className='my-20 text-center items-center justify-center gap-4  text-4xl'>Technologies</h1>    
+//         <div className='flex flex-wrap item-center justify-center gap-4'>
+//           <motion.div 
+//           variants={iconVariant(2.5)}
+//           initial="initial"
+//           animate="animate"
+
+//           className='rounded-2xl border-4 border-neutral-800 p-4'>
+//             <RiReactjsLine className='text-7xl text-cyan-400'/>
+//           </motion.div>
+         
+          
+//           <motion.div 
+//            variants={iconVariant(2.5)}
+//           initial="initial"
+//           animate="animate"
+//           className='rounded-2xl border-4 border-neutral-800 p-4'>
+//             <TbSql className='text-7xl text-red-600'/>
+//           </motion.div>
+              
+//         </div>  
+//     </div>
+//   )
+// }
+
+// export default Technologies
+
+import React from "react";
+import { motion } from "framer-motion";
+
+import { RiReactjsLine } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5, FaCss3Alt, FaGitAlt, FaGithub } from "react-icons/fa";
+import { SiTailwindcss, SiMysql } from "react-icons/si";
+
+const iconVariant = (duration) => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
     },
-  }
-)
+  },
+});
 
 const Technologies = () => {
   return (
-    <div className='border-b border-neutral-800 pb-24'>
-        <h1 className='my-20 text-center items-center justify-center gap-4  text-4xl'>Technologies</h1>    
-        <div className='flex flex-wrap item-center justify-center gap-4'>
-          <motion.div 
-          variants={iconVariant(2.5)}
-          initial="initial"
-          animate="animate"
+    <div className="border-b border-neutral-800 pb-24">
+      <h1 className="my-20 text-center text-4xl">Technologies</h1>
 
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-            <RiReactjsLine className='text-7xl text-cyan-400'/>
-          </motion.div>
-         
-          
-          <motion.div 
-           variants={iconVariant(2.5)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-            <TbSql className='text-7xl text-red-600'/>
-          </motion.div>
-              
-        </div>  
+      <div className="flex flex-wrap items-center justify-center gap-6">
+        <motion.div variants={iconVariant(2.5)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <RiReactjsLine className="text-7xl text-cyan-400" />
+        </motion.div>
+
+        <motion.div variants={iconVariant(2.7)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <IoLogoJavascript className="text-7xl text-yellow-400" />
+        </motion.div>
+
+        <motion.div variants={iconVariant(2.9)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaHtml5 className="text-7xl text-orange-500" />
+        </motion.div>
+
+        <motion.div variants={iconVariant(3.1)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaCss3Alt className="text-7xl text-blue-500" />
+        </motion.div>
+
+        <motion.div variants={iconVariant(3.3)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <SiTailwindcss className="text-7xl text-sky-400" />
+        </motion.div>
+
+        <motion.div variants={iconVariant(3.5)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <SiMysql className="text-7xl text-blue-600" />
+        </motion.div>
+
+        <motion.div variants={iconVariant(3.7)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaGitAlt className="text-7xl text-orange-600" />
+        </motion.div>
+
+        <motion.div variants={iconVariant(3.9)} initial="initial" animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaGithub className="text-7xl text-white" />
+        </motion.div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Technologies
+export default Technologies;
+

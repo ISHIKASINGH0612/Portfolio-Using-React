@@ -15,10 +15,45 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <div key={index} className='w-full max-w-xl mb-8'>
             <h2 className='mb-2 text-xl font-semibold'>{project.title}</h2>
+            {project.liveLink && (
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"       
+                className='mr-4 text-cyan-400 hover:underline'
+              >Live Demo |</a>
+            )}
+            {project.githubLink && (    
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer" 
+                className='text-cyan-400 hover:underline'
+              >GitHub Repo |</a>
+            )}
             <p className='mb-2 text-neutral-500 italic'>{project.timeSpan}</p>
             <p className='mb-4 text-neutral-400 whitespace-pre-line'>{project.description}</p>
           </div>
         ))}
+
+        {/* //i want to add one more link..on clicking on that project raedme will be available
+        // Add a link to the project README file */}
+
+        {/* {PROJECTS.map((project, index) => (
+          <div key={index} className='w-full max-w-xl mb-8'>
+            <h2 className='mb-2 text-xl font-semibold'>{project.title}</h2> 
+            {project.readmeLink && (
+              <a
+                href={project.readmeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='mr-4 text-cyan-400 hover:underline'
+              >Project README |</a>
+            )} 
+          </div>
+        ))} */}
+
+
       </motion.div>
     </div>
   );
